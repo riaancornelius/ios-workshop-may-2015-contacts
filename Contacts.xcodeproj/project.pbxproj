@@ -10,12 +10,11 @@
 		C0ED23A01B1EC891006623AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ED239F1B1EC891006623AE /* main.m */; };
 		C0ED23A31B1EC891006623AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ED23A21B1EC891006623AE /* AppDelegate.m */; };
 		C0ED23A61B1EC891006623AE /* Contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0ED23A41B1EC891006623AE /* Contacts.xcdatamodeld */; };
-		C0ED23A91B1EC891006623AE /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ED23A81B1EC891006623AE /* MasterViewController.m */; };
-		C0ED23AC1B1EC891006623AE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ED23AB1B1EC891006623AE /* DetailViewController.m */; };
 		C0ED23AF1B1EC891006623AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0ED23AD1B1EC891006623AE /* Main.storyboard */; };
 		C0ED23B11B1EC891006623AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0ED23B01B1EC891006623AE /* Images.xcassets */; };
 		C0ED23B41B1EC891006623AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0ED23B21B1EC891006623AE /* LaunchScreen.xib */; };
 		C0ED23C01B1EC891006623AE /* ContactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ED23BF1B1EC891006623AE /* ContactsTests.m */; };
+		C0ED23D11B1ECBFA006623AE /* RCCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ED23D01B1ECBFA006623AE /* RCCMasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,16 +34,14 @@
 		C0ED23A11B1EC891006623AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0ED23A21B1EC891006623AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C0ED23A51B1EC891006623AE /* Contacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Contacts.xcdatamodel; sourceTree = "<group>"; };
-		C0ED23A71B1EC891006623AE /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		C0ED23A81B1EC891006623AE /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		C0ED23AA1B1EC891006623AE /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		C0ED23AB1B1EC891006623AE /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		C0ED23AE1B1EC891006623AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0ED23B01B1EC891006623AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C0ED23B31B1EC891006623AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C0ED23B91B1EC891006623AE /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0ED23BE1B1EC891006623AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0ED23BF1B1EC891006623AE /* ContactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsTests.m; sourceTree = "<group>"; };
+		C0ED23CF1B1ECBFA006623AE /* RCCMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCMasterViewController.h; sourceTree = "<group>"; };
+		C0ED23D01B1ECBFA006623AE /* RCCMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCMasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,15 +85,13 @@
 			children = (
 				C0ED23A11B1EC891006623AE /* AppDelegate.h */,
 				C0ED23A21B1EC891006623AE /* AppDelegate.m */,
-				C0ED23A71B1EC891006623AE /* MasterViewController.h */,
-				C0ED23A81B1EC891006623AE /* MasterViewController.m */,
-				C0ED23AA1B1EC891006623AE /* DetailViewController.h */,
-				C0ED23AB1B1EC891006623AE /* DetailViewController.m */,
 				C0ED23AD1B1EC891006623AE /* Main.storyboard */,
 				C0ED23B01B1EC891006623AE /* Images.xcassets */,
 				C0ED23B21B1EC891006623AE /* LaunchScreen.xib */,
 				C0ED23A41B1EC891006623AE /* Contacts.xcdatamodeld */,
 				C0ED239D1B1EC891006623AE /* Supporting Files */,
+				C0ED23CF1B1ECBFA006623AE /* RCCMasterViewController.h */,
+				C0ED23D01B1ECBFA006623AE /* RCCMasterViewController.m */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -227,11 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0ED23AC1B1EC891006623AE /* DetailViewController.m in Sources */,
-				C0ED23A91B1EC891006623AE /* MasterViewController.m in Sources */,
 				C0ED23A31B1EC891006623AE /* AppDelegate.m in Sources */,
 				C0ED23A01B1EC891006623AE /* main.m in Sources */,
 				C0ED23A61B1EC891006623AE /* Contacts.xcdatamodeld in Sources */,
+				C0ED23D11B1ECBFA006623AE /* RCCMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

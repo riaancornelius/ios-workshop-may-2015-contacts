@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
-#import "MasterViewController.h"
+#import "RCCMasterViewController.h"
+#import "Contact.h"
 
 @interface AppDelegate ()
 
@@ -18,9 +18,30 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    Contact *contact = [NSEntityDescription insertNewObjectForEntityForName:@"Contact"
+                                                             inManagedObjectContext:context];
+    contact.firstname = @"Arthur";
+    contact.lastname = @"Dent";
+    contact.phone = @"011 555 0402";
+    NSError *error;
+    if (![context save:&error]) {
+        NSLog(@"Couldn't save %@", [error localizedDescription]);
+    }
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Contact" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    for (Contact *info in fetchedObjects) {
+        NSLog(@"Name: %@", info.firstname);
+    }
+    
+    
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
+    RCCMasterViewController *controller = (RCCMasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
